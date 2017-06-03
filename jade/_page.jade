@@ -1,0 +1,20 @@
+extends ./_layout.jade
+
+block html
+    body.app.header-fixed.sidebar-fixed.aside-menu-fixed.aside-menu-hidden
+        include ./_header.jade
+        .app-body
+            .sidebar
+                include ./_sidebar.jade
+            main.main
+                ol.breadcrumb
+                    li.breadcrumb-item FPMS
+                    li.breadcrumb-item
+                        a(href='index.html') AnkaraPHP Takım
+                    block breadcrumb
+                .container-fluid
+                    .animated.fadeIn
+                        block content
+        include ./_footer.jade
+        // Javascript
+        script(src='assets/js/app.js')

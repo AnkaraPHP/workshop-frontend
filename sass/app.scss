@@ -1,0 +1,33 @@
+/*!
+ * AnkaraPHP - Freelance Project Management System
+ * @version v1.0.0
+ * @link http://ankaraphp.github.io
+ * @license MIT
+ */
+
+// Mixins
+@import "mixins";
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "../bower_components/bootstrap/scss/bootstrap";
+
+// FontAwesome
+@import "../bower_components/fontawesome/scss/font-awesome";
+
+// Simple Line Icons
+@import "../bower_components/simple-line-icons/scss/simple-line-icons";
+
+// Tether
+@import "../bower_components/tether/src/css/tether";
+
+// CoreUI
+@import "core/core";
+
+@import "todo";
+
+.love-from-ankaraphp {
+  color: red;
+}

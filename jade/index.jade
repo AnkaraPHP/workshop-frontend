@@ -1,0 +1,46 @@
+extends ./_page.jade
+
+block title
+    title Pano
+
+block breadcrumb
+    li.breadcrumb-item.active Pano
+
+block content
+    .row
+        .col-sm-6.col-md-3
+            .card.card-inverse.card-danger
+                .card-block
+                    .h1.text-muted.text-right.mb-4
+                        i.icon-book-open
+                    .h4.mb-0 5
+                    small.text-muted.text-uppercase.font-weight-bold PROJE
+                    .progress.progress-white.progress-xs.mt-3
+                        .progress-bar(role="progressbar", style="width: 5%", aria-valuenow="5", aria-valuemin="0", aria-valuemax="100")
+        .col-sm-6.col-md-3
+            .card.card-inverse.card-info
+                .card-block
+                    .h1.text-muted.text-right.mb-4
+                        i.icon-user
+                    .h4.mb-0 8
+                    small.text-muted.text-uppercase.font-weight-bold MÜŞTERİ
+                    .progress.progress-white.progress-xs.mt-3
+                        .progress-bar(role="progressbar", style="width: 25%", aria-valuenow="25", aria-valuemin="0", aria-valuemax="100")
+        .col-sm-6.col-md-3
+            .card.card-inverse.card-warning
+                .card-block
+                    .h1.text-muted.text-right.mb-4
+                        i.icon-share
+                    .h4.mb-0 13GB
+                    small.text-muted.text-uppercase.font-weight-bold DOSYA MERKEZİ
+                    .progress.progress-white.progress-xs.mt-3
+                        .progress-bar(role="progressbar", style="width: 98%", aria-valuenow="98", aria-valuemin="0", aria-valuemax="100")
+        .col-sm-6.col-md-3
+            .card.card-inverse.card-secondary
+                .card-block
+                    .h1.text-muted.text-right.mb-4
+                        i.icon-lock
+                    .h4.mb-0 8
+                    small.text-muted.text-uppercase.font-weight-bold ŞİFRE
+                    .progress.progress-white.progress-xs.mt-3
+                        .progress-bar(role="progressbar", style="width: 8%", aria-valuenow="8", aria-valuemin="0", aria-valuemax="100")

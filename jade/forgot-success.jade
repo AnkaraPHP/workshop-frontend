@@ -1,0 +1,15 @@
+extends ./_layout.jade
+
+block html
+    body.app.flex-row.align-items-center
+        .container
+            .row.justify-content-center
+                .col-md-8
+                    .card-group.mb-0
+                        .card.p-4
+                            .card-block
+                                h1 Sıfırlama Bağlantısı Gönderildi!
+                                p.text-muted Hesabınızı sıfırlamanız için 'demo@ankaraphp.com' e-posta adresine bir bağlantı gönderdik. Lütfen e-posta adresinizi kontrol edin.
+                                a.btn.btn-primary.px-4(href='login.html') Giriş Yap
+        // Javascript
+        script(src='assets/js/app.js')

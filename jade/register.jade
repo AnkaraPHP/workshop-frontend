@@ -1,0 +1,35 @@
+extends ./_layout.jade
+
+block html
+    body.app.flex-row.align-items-center
+        .container
+            .row.justify-content-center
+                .col-md-6
+                    .card.mx-4
+                            .card-block.p-4
+                                h1 Takım Oluştur
+                                p.text-muted Takım hesabınızı ve kişisel hesabınızı hemen oluşturun.
+                                form(method="get", action="index.html")
+                                    .input-group.mb-3
+                                        span.input-group-addon
+                                            i.icon-briefcase
+                                        input.form-control(type='text', placeholder='Takım İsmi', required)
+                                    .input-group.mb-3
+                                        span.input-group-addon
+                                            i.icon-user
+                                        input.form-control(type='email', placeholder='E-Posta Adresiniz', required)
+                                    .input-group.mb-3
+                                        span.input-group-addon
+                                            i.icon-lock
+                                        input.form-control(type='password', placeholder='Parola', required)
+                                    .input-group.mb-4
+                                        span.input-group-addon
+                                            i.icon-lock
+                                        input.form-control(type='password', placeholder='Parola Onayı', required)
+                                    .row
+                                        .col-6
+                                            button.btn.btn-primary.px-4(type='submit') Takım Oluştur
+                                        .col-6.text-right
+                                            a.btn.btn-link.px-0(href='login.html') Giriş Yap
+        // Javascript
+        script(src='assets/js/app.js')

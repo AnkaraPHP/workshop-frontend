@@ -1,0 +1,179 @@
+extends ./_page.jade
+
+block title
+    title Projeler
+
+block breadcrumb
+    li.breadcrumb-item
+        a(href='projects.html') Projeler
+    li.breadcrumb-item.active AnkaraPHP Websitesi
+
+block content
+    .row
+        .col-md-8
+            .card.card-accent-primary
+                .card-header
+                    | AnkaraPHP Websitesi
+                    span.badge.badge-pill.badge-warning.float-right 25%
+                .card-block.p-0
+                    table.table.mb-0
+                        tr
+                            th Proje Adı:
+                            td AnkaraPHP Websitesi
+                        tr
+                            th Açıklama:
+                            td AnkaraPHP topluluğu için bir websitesi oluşturmak ve etkinlikler hakkında daha detaylı bilgi vermek.
+                        tr
+                            th Başlangıç:
+                            td 3 Haziran 2017
+                        tr
+                            th Durumu:
+                            td
+                                span.badge.badge-warning Yapım Aşamasında
+
+        .col-md-4
+            .card
+                img.card-img-top.pt-5.pb-5(src="assets/img/example-company.svg", alt="AnkaraPHP")
+                .card-block
+                    h4.card-title AnkaraPHP
+                    p.card-text Müşteri Notları
+                    a(href="#").btn.btn-primary Müşteri Detayları
+    .row
+        .col-md-12
+            .card
+                .card-header
+                    ul.nav.nav-tabs.card-header-tabs(role="tablist")#projectTab
+                        li.nav-item
+                            a.nav-link.active(href="#todo", data-toggle="tab", role="tab", aria-controls="todo") Yapılacaklar &nbsp;
+                                span.badge.badge-pill.badge-primary 3
+                        li.nav-item
+                            a.nav-link(href="#passwords", data-toggle="tab", role="tab", aria-controls="passwords") Şifreler &nbsp;
+                                span.badge.badge-pill.badge-primary 2
+                        li.nav-item
+                            a.nav-link(href="#files", data-toggle="tab", role="tab", aria-controls="files") Dosyalar &nbsp;
+                                span.badge.badge-pill.badge-primary 4
+                        li.nav-item
+                            a.nav-link(href="#team", data-toggle="tab", role="tab", aria-controls="team") Ekip &nbsp;
+                                span.badge.badge-pill.badge-primary 3
+                .card-block
+                    .tab-content
+                        .tab-pane.p-0.active(role="tabpanel")#todo
+                            .row
+                                .col-md-2
+                                    select.form-control
+                                        option(value="0") Kişi
+                                        option(value="-1") Herkes
+                                        option(value="1") Eray
+                                        option(value="2") Furkan
+                                        option(value="3") AliFii
+                                .col-md-9
+                                    input.form-control(type="text", placeholder="Yeni Ekle...")
+                                .col-md-1
+                                    button.btn.btn-primary.btn-block(type="button")
+                                        i.fa.fa-plus-circle
+                            hr
+                            .row
+                                .col-md-2
+                                    a(href="#").todo-name
+                                        img(src="https://api.adorable.io/avatars/30/furkan@furkan.com.png").img-avatar
+                                        span Furkan
+                                .col-md-9
+                                    .checkbox.mt-2
+                                        label(for="todo1")
+                                            input(type="checkbox", name="todo1", value="1")#todo1
+                                            | &nbsp; Yeni Websitesi Hakkında Konuşulacak...
+                                .col-md-1
+                                    button.btn.btn-danger.btn-block(type="button")
+                                        i.fa.fa-trash
+                            hr
+                            .row
+                                .col-md-2
+                                    a(href="#").todo-name
+                                        img(src="https://api.adorable.io/avatars/30/furkan@furkan.com.png").img-avatar
+                                        span Furkan
+                                .col-md-9
+                                    .checkbox.mt-2
+                                        label(for="todo2")
+                                            input(type="checkbox", name="todo2", value="1")#todo2
+                                            | &nbsp; Yeni Websitesi Hakkında Konuşulacak...
+                                .col-md-1
+                                    button.btn.btn-danger.btn-block(type="button")
+                                        i.fa.fa-trash
+                        .tab-pane.p-0(role="tabpanel")#passwords
+                            .row
+                                .col-md-3
+                                    .card
+                                        .card-header Registrar
+                                        .card-block
+                                            .form-group
+                                                .input-group
+                                                    span.input-group-addon
+                                                        i.fa.fa-user
+                                                    input(type="text", class="form-control", value="username")
+                                            .form-group
+                                                .input-group
+                                                    span.input-group-addon
+                                                        i.fa.fa-lock
+                                                    input(type="password", class="form-control", value="●●●●●●")
+                                                    span.input-group-btn
+                                                        button.btn.btn-danger(type="button")
+                                                            i.fa.fa-eye
+                                .col-md-3
+                                    .card
+                                        .card-header Pass
+                                        .card-block
+                                            .form-group
+                                                .input-group
+                                                    input(type="text", class="form-control", disabled)
+                                            .form-group
+                                                .input-group
+                                                    span.input-group-addon
+                                                        i.fa.fa-lock
+                                                    input(type="password", class="form-control", value="●●●●●●")
+                                                    span.input-group-btn
+                                                        button.btn.btn-danger(type="button")
+                                                            i.fa.fa-eye
+                        .tab-pane.p-0(role="tabpanel")#files
+                            .row
+                                .col-md-3
+                                    a.btn.btn-block.btn-primary.mb-4(href="#")
+                                        i.fa.fa-2x.fa-file-word-o.mb-2
+                                        br
+                                        | bilgiler.docx
+                                .col-md-3
+                                    a.btn.btn-block.btn-primary.mb-4(href="#")
+                                        i.fa.fa-2x.fa-file-pdf-o.mb-2
+                                        br
+                                        | teklif-formu.pdf
+                                .col-md-3
+                                    a.btn.btn-block.btn-primary.mb-4(href="#")
+                                        i.fa.fa-2x.fa-file-archive-o.mb-2
+                                        br
+                                        | fotolar.zip
+                                .col-md-3
+                                    a.btn.btn-block.btn-primary.mb-4(href="#")
+                                        i.fa.fa-2x.fa-file-o.mb-2
+                                        br
+                                        | deneme.xyz
+                                .col-md-3
+                                    a.btn.btn-block.btn-success.mb-4(href="#")
+                                        i.fa.fa-2x.fa-plus-circle.mb-2
+                                        br
+                                        | Dosya Ekle
+                        .tab-pane.p-0(role="tabpanel")#team
+                            .row
+                                .col-md-4
+                                    .card
+                                        .card-block.p-3.clearfix
+                                            img(src="https://api.adorable.io/avatars/50/eray@labkod.com.png").mr-3.float-left.team-member-img
+                                            h5.mt-2.mb-0 Eray
+                                .col-md-4
+                                    .card
+                                        .card-block.p-3.clearfix
+                                            img(src="https://api.adorable.io/avatars/50/furkan@furkan.com.png").mr-3.float-left.team-member-img
+                                            h5.mt-2.mb-0 Furkan
+                                .col-md-4
+                                    .card
+                                        .card-block.p-3.clearfix
+                                            img(src="https://api.adorable.io/avatars/50/alifii@alifii.com.png").mr-3.float-left.team-member-img
+                                            h5.mt-2.mb-0 AliFii

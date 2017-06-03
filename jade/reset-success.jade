@@ -1,0 +1,15 @@
+extends ./_layout.jade
+
+block html
+    body.app.flex-row.align-items-center
+        .container
+            .row.justify-content-center
+                .col-md-8
+                    .card-group.mb-0
+                        .card.p-4
+                            .card-block
+                                h1 Hesabınızın Parolası Değiştirildi!
+                                p.text-muted Hesabınızın parolasını değiştirdiniz. Artık yeni belirlediğiniz parola ile giriş yapabilirsiniz.
+                                a.btn.btn-primary.px-4(href='login.html') Giriş Yap
+        // Javascript
+        script(src='assets/js/app.js')

@@ -1,0 +1,40 @@
+header.app-header.navbar
+    button.navbar-toggler.mobile-sidebar-toggler.d-lg-none(type='button') ☰
+    a.navbar-brand(href='index.html')
+    ul.nav.navbar-nav.d-md-down-none
+        li.nav-item
+            a.nav-link.navbar-toggler.sidebar-toggler(href='#') ☰
+        li.nav-item.px-3.active
+            a.nav-link(href='index.html') AnkaraPHP Takım
+        li.nav-item.px-3
+            a.nav-link(href='index.html') Firmam
+    ul.nav.navbar-nav.ml-auto.px-1
+        li.nav-item.dropdown
+            a.nav-link.dropdown-toggle.nav-link(data-toggle='dropdown', href='javascript:;', role='button', aria-haspopup='true', aria-expanded='false')
+                img.img-avatar(src='https://api.adorable.io/avatars/50/hello@ankaraphp.github.io.png', alt='hello@ankaraphp.com')
+                span.d-md-down-none Hello AnkaraPHP
+            .dropdown-menu.dropdown-menu-right
+                .dropdown-header.text-center
+                    strong AnkaraPHP Takım
+                a.dropdown-item(href='#')
+                    i.fa.fa-users
+                    |  Kişiler
+                    span.badge.badge-success 5
+                a.dropdown-item(href='#')
+                    i.fa.fa-wrench
+                    |  Ayarlar
+                .dropdown-header.text-center
+                    strong Hesap
+                a.dropdown-item(href='#')
+                    i.fa.fa-user
+                    |  Profil Bilgileri
+                a.dropdown-item(href='#')
+                    i.fa.fa-wrench
+                    |  Ayarlar
+                .divider
+                a.dropdown-item(href='#')
+                    i.fa.fa-shield
+                    |  Kilitle
+                a.dropdown-item(href='#')
+                    i.fa.fa-lock
+                    |  Çıkış Yap

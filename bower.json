@@ -1,0 +1,13 @@
+{
+  "name": "AnkaraPHP",
+  "version": "1.0.0",
+  "dependencies": {
+    "bootstrap": "4.0.0-alpha.6",
+    "tether": "latest",
+    "jquery": "^3.0.0",
+    "fontawesome": "latest",
+    "simple-line-icons": "latest",
+    "pace": "latest"
+  },
+  "private": true
+}

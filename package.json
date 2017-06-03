@@ -1,0 +1,44 @@
+{
+  "name": "workshop",
+  "version": "1.0.0",
+  "description": "AnkaraPHP Workshop Freelance Project Management Template",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ankaraphp/freelance-template.git"
+  },
+  "dependencies": {
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-csso": "^1.0.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-htmlhint": "^0.3.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.0.0",
+    "gulp-sourcemaps": "^1.9.1",
+    "gulp-uglify": "^1.5.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.10.0"
+  },
+  "keywords": [
+    "Freelance",
+    "Project",
+    "Management",
+    "System",
+    "Frontend",
+    "Template"
+  ],
+  "author": "AnkaraPHP",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ankaraphp/freelance-template/issues"
+  },
+  "homepage": "https://github.com/ankaraphp/freelance-template#readme"
+}

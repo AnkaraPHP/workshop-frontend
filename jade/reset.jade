@@ -1,0 +1,24 @@
+extends ./_layout.jade
+
+block html
+    body.app.flex-row.align-items-center
+        .container
+            .row.justify-content-center
+                .col-md-8
+                    .card-group.mb-0
+                        .card.p-4
+                            .card-block
+                                h1 Parola Sıfırla
+                                p.text-muted Hesabınızın parolasını sıfırlamak için lütfen yeni parolayı belirtin.
+                                form(method="get", action="reset-success.html")
+                                    .input-group.mb-4
+                                        span.input-group-addon
+                                            i.icon-lock
+                                        input.form-control(type='password', placeholder='Parola', required)
+                                    .input-group.mb-4
+                                        span.input-group-addon
+                                            i.icon-lock
+                                        input.form-control(type='password', placeholder='Parola Onayı', required)
+                                    button.btn.btn-primary.px-4(type='submit') Sıfırla
+        // Javascript
+        script(src='assets/js/app.js')
